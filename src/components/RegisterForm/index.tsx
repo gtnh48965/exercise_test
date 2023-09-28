@@ -235,7 +235,7 @@ const updateValuePhone = (e: Event) => {
 
 const submittingForm = () => {
     axios.post(`${BASE_URL}/api/auth/sign-up/info`, {
-        "country_id": "ru",
+        "country_id": unicodeFlagIconCountry,
         "plan_id": "1",
         "email": mail,
         "password": mail,
