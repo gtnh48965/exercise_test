@@ -1,0 +1,84 @@
+.container{
+  display: grid;
+  height: 100vh;
+  max-height: 100vh;
+  grid-template-columns: repeat(12,minmax(0,1fr));
+  padding: 1rem;
+  @media screen and (max-width: 1200px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-height: inherit;
+    height: inherit;
+  }
+  .frame{
+    background-image: url("../../components/img/Frame.png");
+    background-repeat: no-repeat;
+    //background-size: 1043px 910px;
+    background-position: right -7rem center;
+    border-radius: 24px;
+    background-color: rgb(32 34 38);
+    position: fixed;
+    margin-bottom: 20px;
+    top: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    height: auto;
+
+    @media screen and (min-width: 1200px){
+      background-position: right 0 center;
+      background-size:inherit;
+      width: 500px;
+    }
+    @media screen and (min-width: 1440px){
+      background-position: right 0 center;
+      background-size:inherit;
+      width: 576px;
+    }
+    @media screen and (min-width: 1800px){
+      background-size: 1043px 910px;
+      width: 900px;
+    }
+    @media screen and (max-width: 1200px){
+      position: inherit;
+      width: 100%;
+      //max-width: 528px;
+      height: 219px;
+      background-position: center center
+    }
+  }
+  .formWrap{
+    overflow-x: hidden;
+    grid-column: span 7/span 7;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 100%;
+    max-width: 528px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 48px;
+
+    min-width: 528px;
+    @media screen and (max-width: 1200px){
+      overflow: hidden;
+      max-width: inherit;
+      min-width: inherit;
+    }
+    @media screen and (min-width: 1200px){
+      overflow: inherit;
+    }
+    .containerForm{
+      //width: 464px;
+      width: 100%;
+      border-radius: 8px;
+      background: var(--White, #FFF);
+      box-shadow: 0 4px 16px 0 rgba(32, 34, 38, 0.10);
+      @media screen and (max-width: 1200px){
+        width: 100%;
+      }
+    }
+  }
+}

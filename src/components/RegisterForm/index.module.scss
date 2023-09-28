@@ -1,0 +1,110 @@
+.isLoaderContainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.wrap{
+  /* Sh1 */
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+  margin: 32px;
+  //@media screen and (max-width: 1200px){
+  //  margin: 32px;
+  //}
+  .wrapElementsLine{
+    display: flex;
+    justify-content: space-between;
+    input, label{
+      max-width: 224px;
+    }
+    @media screen and (max-width: 1200px){
+      display: flex;
+      flex-direction: column;
+      justify-content: inherit;
+      gap: 47px;
+      input, label{
+        max-width: inherit;
+      }
+    }
+  }
+  .wrapList{
+    position: relative;
+
+  .select__dropdown {
+    font-family: Inter, sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    margin-top: .5rem;
+    max-height: 200px;
+    min-height: 100px;
+    --tw-bg-opacity: 1;
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(32, 34, 38, .1);
+    border: 1px solid #d3d3d3;
+    border-radius: 16px;
+    overflow-y: scroll;
+    z-index: 20;
+    padding: .5rem;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
+    .select__item {
+      display: flex;
+      cursor: pointer;
+      font-family: Inter;
+      gap: 24px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      .select__item__name{
+        //styleName: Desktop/P1;
+        font-family: Inter;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+
+      }
+      .select__item__phone{
+        color: rgb(131 137 153);
+      }
+    }
+  }
+  }
+  .register{
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid var(--Blue, #2C60F6);
+    background: var(--Blue, #2C60F6);
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+    padding: 10px 48px;
+  }
+  .link__span{
+    color: var(--Grey, #838999);
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    .link{
+      cursor: pointer;
+      color: var(--Blue, #2C60F6);
+      text-decoration: inherit;
+    }
+  }
+}
